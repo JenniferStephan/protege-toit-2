@@ -1,0 +1,2 @@
+class Heb < ApplicationRecord
+end

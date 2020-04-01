@@ -1,0 +1,17 @@
+.footer {
+  height: 280px;
+  padding: 60px 40px 40px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  // text-align: center;
+  // align-items: center;
+}
+
+.list-liens a {
+  color: grey;
+}
+
+.list-liens a:hover {
+  color: #6345EB;
+}

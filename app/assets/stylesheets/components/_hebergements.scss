@@ -1,0 +1,63 @@
+.bandeau {
+  height: 40vh;
+  background-color: purple;
+}
+
+
+#query {
+    position: relative;
+    height: 8vh;
+    top: -120px;
+    right: -380px;
+    width: 484px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 17px;
+}
+
+.cards-container {
+  width: 70%;
+  padding: 40px;
+  background-color: white;
+  border-radius: 40px;
+  position: relative;
+  top: -100px;
+  background-color: rgb(249, 222, 229);
+  height: fit-content;
+}
+
+.cards {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 789px;
+  background-color: rgba(249, 222, 229, 1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  right: -241px;
+  top: -90px;
+
+}
+
+.cards h2 {
+    font-size: 25px;
+
+}
+
+.cards p {
+    font-size: 20px;
+
+}
+
+.creerheb {
+  width: 70%;
+  padding: 40px;
+  background-color: white;
+  border-radius: 40px;
+  position: relative;
+  top: -120px;
+  background-color: rgb(249, 222, 229);
+}
