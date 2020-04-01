@@ -5,18 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Heb.destroy_all
+
+
 Heb.create(name: 'foyer cool',
-                    address: "13 rue Morand, Paris",
-                    nbmax: 4)
+                    address: "13 rue Morand, Paris")
 
 Heb.create(name: 'foyer paisible',
-                    address: "20 rue Fontaine au Roi, Paris",
-                    nbmax: 7)
+                    address: "20 rue Fontaine au Roi, Paris")
 
 Heb.create(name: 'foyer bourgeois',
-                    address: "28 avenue Foch, Paris",
-                    nbmax: 2)
+                    address: "28 avenue Foch, Paris")
 
 Heb.create(name: 'foyer beau',
-                    address: "150 rue Saint-Maur, Paris",
-                    nbmax: 8)
+                    address: "150 rue Saint-Maur, Paris")
