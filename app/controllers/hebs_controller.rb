@@ -3,11 +3,11 @@ skip_before_action :authenticate_user!, only: [ :index, :new, :create, :show ]
 
   def index
       if params[:query].present?
-      hebergements = Heb.order(created_at: :asc)
-      sql_query = "hebergements.name ILIKE :query  OR hebergements.address ILIKE :query"
-        @hebergements = hebergements.where(sql_query, query: "%#{params[:query]}%")
+      hebs = Heb.order(created_at: :asc)
+      sql_query = "hebs.name ILIKE :query  OR hebs.address ILIKE :query"
+        @hebs = hebs.where(sql_query, query: "%#{params[:query]}%")
       else
-        @hebergements = Heb.all
+        @hebs = Heb.all
       end
     end
 

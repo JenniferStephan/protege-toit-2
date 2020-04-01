@@ -44,9 +44,11 @@
 }
 
 .mini-banner {
-  background-size: cover;
-  background-position: left;
+  background-size: fit;
+  background-repeat: no-repeat;
   padding: 150px 0;
   height: 80vh;
-  background-position: right;
+  background-position: top;
+  position: relative;
+  top: -70px;
 }
