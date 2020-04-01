@@ -26,7 +26,7 @@
                     <p><%= heb.address %></p>
                   </div>
 
-                    <p class="btn">2 places restantes</p>
+                    <%= link_to "2 places", heb_path(heb), class: "btn btn-foyer" %>
 
                 </div>
 
@@ -34,12 +34,12 @@
     </div>
 
 
-<!-- <img class="carte" src="<%#= image_path('building.svg') %>"/> -->
-<div id="map" class="carte"
+<img class="carte" src="<%= image_path('building.svg') %>"/>
+<!-- <div id="map" class="carte"
      style="width: 100%;
      height: 600px;"
-     data-markers="<%= @markers.to_json %>"
-     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+     data-markers="<%#= @markers.to_json %>"
+     data-mapbox-api-key="<%#= ENV['MAPBOX_API_KEY'] %>"></div> -->
 
 </div>
 

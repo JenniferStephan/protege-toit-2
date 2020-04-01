@@ -20,11 +20,11 @@ skip_before_action :authenticate_user!, only: [ :index, :new, :create, :show ]
     end
 
     def show
-      @hebergement = Heb.find(params[:id])
+      @heb = Heb.find(params[:id])
     end
 
     def new
-      @hebergement = Heb.new
+      @heb = Heb.new
     end
 
     def create
@@ -39,7 +39,7 @@ skip_before_action :authenticate_user!, only: [ :index, :new, :create, :show ]
   private
 
   def heb_params
-      params.require(:hebergement).permit(:name, :address, :nbmax)
+      params.require(:heb).permit(:name, :address, :nbmax)
   end
 
 
