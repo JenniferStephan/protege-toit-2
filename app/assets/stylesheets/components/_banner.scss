@@ -11,8 +11,10 @@
 .banner {
   background-size: cover;
   background-position: right;
-  padding: 150px 0;
-  height: 102vh;
+  padding: 100px 0;
+  height: 110vh;
+  position: relative;
+  top: -127px;
 }
 
 .banner h1 {
@@ -23,7 +25,7 @@
   font-weight: bold;
   width: 800px;
   position: relative;
-  top: 80px;
+  top: 230px;
 }
 
 .banner p {
@@ -36,7 +38,7 @@
 
 .boutons {
   position: relative;
-  top: 100px;
+  top: 270px;
   margin-left: 130px;
   margin-bottom: 20px;
 }

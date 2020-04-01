@@ -1,0 +1,10 @@
+<%= simple_form_for(@hebergement) do |h| %>
+
+  <%= h.input :name, label: "Nom", placeholder: "Nom de l'hébergement" %>
+
+  <%= h.input :address, label: "Adresse", placeholder: '13 rue Morand, Paris'  %>
+
+  <%= h.input :nbmax, label: 'Combien de places dans cet hébergement ?' %>
+  <%= h.submit "Valider", class: "btn btn-foyer"  %>
+<% end %>
+

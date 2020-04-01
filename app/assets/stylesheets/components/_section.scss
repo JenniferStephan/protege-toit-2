@@ -1,0 +1,30 @@
+.section {
+  height: 450px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.section-demandeur {
+  background-color: rgba(129, 46, 128, 0.3);
+}
+
+.section-hebergeur {
+  background-color: rgba(244, 191, 203, 0.5);
+}
+
+.section p {
+  width: 700px;
+  // margin-left: 100px;
+  font-size: 20px;
+  color: white;
+}
+
+.section img {
+  width: 70vh;
+  height: 70%;
+  margin: 1em;
+}

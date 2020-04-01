@@ -3,8 +3,13 @@
   flex-direction: row;
   background: transparent;
   position: relative;
-  top: -168px;
-  right: 100px;
+  top: -8px;
+  right: 0px;
+  z-index: 10;
+}
+
+.navbar-nav {
+color: white;
 }
 
 .logo {

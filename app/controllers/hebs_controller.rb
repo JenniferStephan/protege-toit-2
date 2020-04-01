@@ -1,25 +1,26 @@
 class HebsController < ApplicationController
+skip_before_action :authenticate_user!, only: [ :index, :new, :create, :show ]
 
   def index
       if params[:query].present?
-      hebergements = Hebergement.order(created_at: :asc)
+      hebergements = Heb.order(created_at: :asc)
       sql_query = "hebergements.name ILIKE :query  OR hebergements.address ILIKE :query"
         @hebergements = hebergements.where(sql_query, query: "%#{params[:query]}%")
       else
-        @hebergements = Hebergement.all
+        @hebergements = Heb.all
       end
     end
 
     def show
-      @hebergement = Hebergement.find(params[:id])
+      @hebergement = Heb.find(params[:id])
     end
 
     def new
-      @hebergement = Hebergement.new
+      @hebergement = Heb.new
     end
 
     def create
-      @hebergement = Hebergement.new(heb_params)
+      @hebergement = Heb.new(heb_params)
       if @hebergement.save
         redirect_to root_path
       else
