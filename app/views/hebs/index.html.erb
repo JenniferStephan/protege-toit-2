@@ -34,8 +34,12 @@
     </div>
 
 
-<img class="carte" src="<%= image_path('building.svg') %>"/>
-
+<!-- <img class="carte" src="<%#= image_path('building.svg') %>"/> -->
+<div id="map" class="carte"
+     style="width: 100%;
+     height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 
 </div>
 

@@ -3,12 +3,20 @@ skip_before_action :authenticate_user!, only: [ :index, :new, :create, :show ]
 
   def index
       if params[:query].present?
-      hebs = Heb.order(created_at: :asc)
+      hebs = Heb.geocoded.order(created_at: :asc)
       sql_query = "hebs.name ILIKE :query  OR hebs.address ILIKE :query"
         @hebs = hebs.where(sql_query, query: "%#{params[:query]}%")
       else
-        @hebs = Heb.all
+        @hebs = Heb.geocoded
       end
+
+      @markers = @hebs.map do |heb|
+      {
+        lat: heb.latitude,
+        lng: heb.longitude
+      }
+    end
+
     end
 
     def show
