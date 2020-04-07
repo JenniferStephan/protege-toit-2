@@ -27,17 +27,26 @@
     padding: 17px;
 }
 
-#mapboxgl-ctrl-geocoder--input {
+.mapboxgl-ctrl-geocoder--input {
     // position: relative;
-    height: 8vh;
+    height: 7vh;
     // top: -120px;
     // right: -380px;
     width: 600px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
     border-radius: 10px;
     border: none;
     outline: none;
-    padding: 17px;
+    padding: 15px;
+}
+
+.mapboxgl-ctrl-geocoder--button {
+  display: none;
+}
+
+.mapboxgl-ctrl-geocoder--icon  {
+  display: none;
 }
 
 .building {
@@ -71,7 +80,7 @@
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 10px;
-  height: 10vh;
+  height: 15vh;
   // position: relative;
   // right: -241px;
   // top: -90px;
