@@ -27,6 +27,19 @@
     padding: 17px;
 }
 
+#mapboxgl-ctrl-geocoder--input {
+    // position: relative;
+    height: 8vh;
+    // top: -120px;
+    // right: -380px;
+    width: 600px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 17px;
+}
+
 .building {
   height: 26vh;
   width: 28vh;
