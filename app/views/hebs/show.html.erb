@@ -1,7 +1,15 @@
 <div class="container-show">
 
-  <h1><%= @heb.name %></h1>
-  <p><%= @heb.address %></p>
+  <div class="d-flex flex-row justify-content-between">
+    <div class="d-flex flex-column">
+      <h1><%= @heb.name %></h1>
+      <p><%= @heb.address %></p>
+    </div>
+     <div class="custom-control custom-switch">
+       <input type="checkbox" class="custom-control-input" id="customSwitch1" onChange= "" checked>
+       <label class="custom-control-label" for="customSwitch1">Dispo</label>
+     </div>
+  </div>
 
 <img class="foyer-img" src="<%= image_path('building.svg') %>"/>
 
