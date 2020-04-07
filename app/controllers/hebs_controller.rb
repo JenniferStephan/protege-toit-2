@@ -32,7 +32,8 @@ skip_before_action :authenticate_user!, only: [ :index, :new, :create, :show ]
     def create
       @heb = Heb.new(heb_params)
       if @heb.save
-        render :show
+        @hebs = Heb.geocoded
+        render :index
       else
         render :new
       end
