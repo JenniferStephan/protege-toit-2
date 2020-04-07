@@ -14,7 +14,8 @@ skip_before_action :authenticate_user!, only: [ :index, :new, :create, :show ]
       {
         lat: heb.latitude,
         lng: heb.longitude,
-        infoWindow: render_to_string(partial: "info_window", locals: { heb: heb })
+        infoWindow: render_to_string(partial: "info_window", locals: { heb: heb }),
+        image_url: helpers.asset_url('picto-map.png')
       }
     end
 
