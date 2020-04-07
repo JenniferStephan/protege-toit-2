@@ -30,10 +30,9 @@ skip_before_action :authenticate_user!, only: [ :index, :new, :create, :show ]
     end
 
     def create
-      raise
-      @hebergement = Heb.new(heb_params)
-      if @hebergement.save
-        redirect_to heb_path(heb)
+      @heb = Heb.new(heb_params)
+      if @heb.save
+        render :show
       else
         render :new
       end
@@ -42,7 +41,7 @@ skip_before_action :authenticate_user!, only: [ :index, :new, :create, :show ]
   private
 
   def heb_params
-      params.require(:heb).permit(:name, :address, :nbmax)
+      params.require(:heb).permit(:name, :address, :description)
   end
 
 
