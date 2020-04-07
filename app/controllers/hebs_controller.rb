@@ -30,9 +30,10 @@ skip_before_action :authenticate_user!, only: [ :index, :new, :create, :show ]
     end
 
     def create
+      raise
       @hebergement = Heb.new(heb_params)
       if @hebergement.save
-        redirect_to root_path
+        redirect_to heb_path(heb)
       else
         render :new
       end

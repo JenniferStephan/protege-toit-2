@@ -50,9 +50,9 @@
 }
 
 .building {
-  height: 26vh;
-  width: 28vh;
-  margin: 10px;
+  height: 6vh;
+  width: 6vh;
+  margin-right: 10px;
 }
 
 .carte {
@@ -78,7 +78,9 @@
   width: 600px;
   background-color: rgba(249, 222, 229, 1);
   border-radius: 8px;
-  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
   margin-bottom: 10px;
   height: 15vh;
   // position: relative;
@@ -87,13 +89,14 @@
 
 }
 
-.cards h2 {
+.cards h3 {
+    margin-top: 2vh;
     font-size: 20px;
 
 }
 
 .cards p {
-    font-size: 18px;
+    font-size: 16px;
 
 }
 

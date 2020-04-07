@@ -13,7 +13,6 @@
                     class: "td form-control",
                     placeholder: "Chercher un hébergement par nom, catégorie, adresse..."%>
                 <% end %>
-            <!-- <img class="building" src="<%#= image_path('building.svg') %>"/> -->
 
           </div>
 
@@ -22,8 +21,11 @@
                 <div class="cards d-flex flex-row justify-content-between">
 
                   <div class="d-flex flex-column">
-                    <h2><%= heb.name.capitalize %></h2>
-                    <p><%= heb.address %></p>
+                          <div class="d-flex flex-row">
+                            <img class="building" src="<%= image_path('building.svg') %>"/>
+                            <h3><%= heb.name.capitalize %></h3>
+                          </div>
+                    <p>📍<%= heb.address %></p>
                   </div>
 
                     <%= link_to "2 places", heb_path(heb), class: "btn btn-foyer" %>

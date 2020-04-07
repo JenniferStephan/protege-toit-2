@@ -7,10 +7,28 @@
   right: 0px;
   z-index: 10;
   height: 80px;
+  color: white;
 }
 
-.navbar-nav {
-color: white;
+.nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #812E80;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    font-weight: bold;
+}
+
+#navbarSupportedContent {
+  margin-left: 500px;
+}
+
+.nav-link {
+  margin: 14px;
 }
 
 .logo {
