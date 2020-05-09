@@ -10,6 +10,15 @@ class Heb < ApplicationRecord
     "autres"
     ]
 
+  SERVICES = [
+    "suivi psychologique",
+    "accompagnement juridique",
+    "garde d'enfants",
+    "centre d'écoute",
+    "autres"
+    ]
+
   validates :security_features, presence: true, inclusion: { in: SECURITY_FEATURES }, on: :create
+  validates :services, presence: true, inclusion: { in: SERVICES }, on: :create
 
 end
