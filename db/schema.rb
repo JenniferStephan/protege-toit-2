@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_09_155303) do
+ActiveRecord::Schema.define(version: 2020_05_09_163256) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2020_05_09_155303) do
     t.string "security_features"
     t.string "services"
     t.boolean "availability", default: true
+    t.string "status_request", default: "en attente"
     t.index ["user_id"], name: "index_hebs_on_user_id"
   end
 
