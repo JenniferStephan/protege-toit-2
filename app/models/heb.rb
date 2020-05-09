@@ -8,7 +8,7 @@ class Heb < ApplicationRecord
     "gardien 24h/24",
     "gardien à horaires définis",
     "autres"
-    ]
+  ]
 
   SERVICES = [
     "suivi psychologique",
@@ -16,7 +16,7 @@ class Heb < ApplicationRecord
     "garde d'enfants",
     "centre d'écoute",
     "autres"
-    ]
+  ]
 
   validates :security_features, presence: true, inclusion: { in: SECURITY_FEATURES }, on: :create
   validates :services, presence: true, inclusion: { in: SERVICES }, on: :create
