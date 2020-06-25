@@ -8,14 +8,18 @@
 Heb.destroy_all
 
 
-Heb.create(name: 'foyer cool',
-                    address: "13 rue Morand, Paris")
+Heb.create(name: 'ADALEA',
+                    address: "50, rue de la Corderie, 22 000 Saint-brieuc",
+                    nbmax: 4)
 
-Heb.create(name: 'foyer paisible',
-                    address: "20 rue Fontaine au Roi, Paris")
+Heb.create(name: 'ADALEA 2',
+                    address: "38, rue de Paris, 22 000 Saint-brieuc",
+                    nbmax: 7)
 
-Heb.create(name: 'foyer bourgeois',
-                    address: "28 avenue Foch, Paris")
+Heb.create(name: 'ADALEA 3',
+                    address: "30bis, rue Docteur Rochard, 22 000 Saint-brieuc",
+                    nbmax: 2)
 
-Heb.create(name: 'foyer beau',
-                    address: "150 rue Saint-Maur, Paris")
+Heb.create(name: 'ADALEA 4',
+                    address: "9, rue Napoléon 1er, 56 300 Pontivy",
+                    nbmax: 8)
